@@ -22,11 +22,6 @@ module.exports = {
       type: 'string',
       message: 'dev server port',
       default: '4000'
-    },
-    // confirmがフラグになる
-    isUseStore: {
-      type: 'confirm',
-      message: 'is use Vuex Store?'
     }
   },
   // 条件にマッチする時だけコピーする

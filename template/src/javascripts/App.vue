@@ -3,12 +3,10 @@ div
   img(src='../images/home.svg')
   p Hello World!
   TestComponent
-  {{#isUseStore}}
   p counter
   button(@click="onDecrementButtonClick") -
   span(style="padding: 0 10px;") \{{ $store.state.count }}
   button(@click="onIncrementButtonClick") +
-  {{/isUseStore}}
 </template>
 
 <script>
@@ -19,7 +17,6 @@ export default {
   components: {
     TestComponent
   },
-  {{#isUseStore}}
   methods: {
     onIncrementButtonClick() {
       this.$store.commit('increment');
@@ -28,7 +25,6 @@ export default {
       this.$store.commit('decrement');
     }
   }
-  {{/isUseStore}}
 };
 </script>
 
