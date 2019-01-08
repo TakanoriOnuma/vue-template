@@ -24,10 +24,6 @@ module.exports = {
       default: '4000'
     }
   },
-  // 条件にマッチする時だけコピーする
-  filters: {
-    'src/javascripts/store/**/*': 'isUseStore'
-  },
   // vue initで展開させないファイルを指定する
   skipInterpolation: ['node_modules/**'],
   complete: (data) => {
