@@ -22,8 +22,15 @@ module.exports = {
       type: 'string',
       message: 'dev server port',
       default: '4000'
+    },
+    isUseStore: {
+      type: 'confirm',
+      message: 'is use Vuex Store?'
     }
   },
-  skipInterpolation: ['src/**/*.vue', 'node_modules/**'],
+  filters: {
+    'src/javascripts/store/**/*': 'isUseStore'
+  },
+  skipInterpolation: ['node_modules/**'],
   completeMessage: '{{#inPlace}}To get started:\n  yarn install\n  yarn start{{else}}To get started:\n  cd {{destDirName}}\n  yarn install\n  yarn start{{/inPlace}}'
 };
