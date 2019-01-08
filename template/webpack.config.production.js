@@ -9,7 +9,6 @@ const baseConfig = require('./webpack.config.base.js');
 const config = merge(baseConfig, {
   mode: 'production',
   output: {
-    path: path.resolve('./server/public/'),
     // HTMLにinjectionするパスを相対パスで設定する
     publicPath: './'
   },

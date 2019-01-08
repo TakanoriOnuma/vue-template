@@ -13,13 +13,8 @@
 ## タスク一覧
 ### 開発サーバーの立ち上げ
 `$ npm start`  
-[http://localhost:3000](http://localhost:3000)にアクセスしてフロントエンドの開発をする。  
-
-### websocketサーバーの立ち上げ
-`$ npm run server`  
-[http://localhost:4000](http://localhost:4000)にsocketサーバーが立ち上がる。  
-開発中はここにアクセスしてもエラーになるが、フロントエンドのコードをビルドするとビルドされたファイルが表示される。  
+[http://localhost:4000](http://localhost:4000)にアクセスしてフロントエンドの開発をする。  
 
 ### フロントエンドのコードのビルド
 `$ npm run build`  
-server/public以下に生成物を配置する。
+dist以下に生成物を配置する。
