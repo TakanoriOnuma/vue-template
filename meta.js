@@ -24,5 +24,6 @@ module.exports = {
       default: '4000'
     }
   },
+  skipInterpolation: ['src/**/*.vue', 'node_modules/**'],
   completeMessage: '{{#inPlace}}To get started:\n  yarn install\n  yarn start{{else}}To get started:\n  cd {{destDirName}}\n  yarn install\n  yarn start{{/inPlace}}'
 };
