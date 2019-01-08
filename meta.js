@@ -23,14 +23,25 @@ module.exports = {
       message: 'dev server port',
       default: '4000'
     },
+    // confirmがフラグになる
     isUseStore: {
       type: 'confirm',
       message: 'is use Vuex Store?'
     }
   },
+  // 条件にマッチする時だけコピーする
   filters: {
     'src/javascripts/store/**/*': 'isUseStore'
   },
+  // vue initで展開させないファイルを指定する
   skipInterpolation: ['node_modules/**'],
-  completeMessage: '{{#inPlace}}To get started:\n  yarn install\n  yarn start{{else}}To get started:\n  cd {{destDirName}}\n  yarn install\n  yarn start{{/inPlace}}'
+  complete: (data) => {
+    console.log('\nTo get started:');
+    // 別ディレクトリに生成する場合は出力先のディレクトリに移動するメッセージを出す
+    if (!data.inPlace) {
+      console.log(`  cd ${data.destDirName}`);
+    }
+    console.log('  yarn install');
+    console.log('  yarn start');
+  }
 };
