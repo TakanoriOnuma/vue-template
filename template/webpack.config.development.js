@@ -20,7 +20,7 @@ const config = merge(baseConfig, {
     hot: true,
     inline: true,
     overlay: true,
-    port: 4000
+    port: {{ devServerPort }}
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

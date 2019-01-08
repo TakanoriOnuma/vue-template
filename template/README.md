@@ -13,7 +13,7 @@
 ## タスク一覧
 ### 開発サーバーの立ち上げ
 `$ npm start`  
-[http://localhost:4000](http://localhost:4000)にアクセスしてフロントエンドの開発をする。  
+[http://localhost:{{ devServerPort }}](http://localhost:{{ devServerPort }})にアクセスしてフロントエンドの開発をする。  
 
 ### フロントエンドのコードのビルド
 `$ npm run build`  

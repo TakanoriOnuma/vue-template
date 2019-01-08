@@ -1,8 +1,7 @@
 {
-  "name": "vue-template",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "{{ description }}",
   "devEngines": {
     "node": ">=8.9.x",
     "npm": ">=4.0.x",
@@ -12,8 +11,8 @@
     "start": "webpack-dev-server --config webpack.config.development.js",
     "build": "webpack --config webpack.config.production.js"
   },
-  "author": "",
-  "license": "MIT",
+  "author": "{{ author }}",
+  "license": "{{ licence }}",
   "dependencies": {
     "reset-css": "^4.0.1",
     "vue": "^2.5.21",
