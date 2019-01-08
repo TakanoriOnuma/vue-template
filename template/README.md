@@ -1,7 +1,5 @@
-# オンラインスキルアップのサンプルコード
-
-オンラインスキルアップの課題のサンプルコード。  
-[デプロイ先](https://online-skillup-example.herokuapp.com/)  
+# {{ name }}
+{{ description }}
 
 ## 環境
 + node: 10.15.0
